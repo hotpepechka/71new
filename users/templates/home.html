@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block title %}Home{% endblock %}
+
+    {% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">I love kittens</h1>
+        <p class="lead">kittens is my love</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">view all kittens articles</a>
+        </p>
+    </div>
+    {% endblock %}
+</body>
+</html>
